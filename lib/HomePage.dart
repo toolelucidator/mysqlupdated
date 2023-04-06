@@ -75,8 +75,9 @@ class _HomePageState extends State<HomePage> {
         _correoController!.text = "";
 
         //llamar la consulta general
-        _selectData();
       }
+      _selectData();
+
     });
   }
 
@@ -169,7 +170,10 @@ class _HomePageState extends State<HomePage> {
           IconButton(
             icon: Icon(Icons.update),
             onPressed: () {
-              BDConnections.selectData();
+              setState(() async {
+                _Students = await _selectData();
+              });
+
             },
           )
         ],
