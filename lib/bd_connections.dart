@@ -4,7 +4,7 @@ import 'Student.dart';
 import 'dart:convert';
 
 class BDConnections {
-  static const SERVER = "http://192.168.0.130/Students/sqloperations.php";
+  static const SERVER = "http://192.168.0.125/Students/sqloperations.php";
   static const _CREATE_TABLE_COMMAND = "CREATE_TABLE";
   static const _SELECT_TABLE_COMMAND = "SELECT_TABLE";
   static const _INSERT_TABLE_COMMAND = "INSERT_DATA";
